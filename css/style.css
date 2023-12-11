@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    width: 95%;
+    height: 300px;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-header {
+    color: white;
+    width: 95%;
+    max-width: 1000px;
+    height: auto;
+    text-align: center;
+}
+
+#text-header h1 {
+    font-size: 48px;
+}
+
+#text-header h2 {
+    font-size: 32px;
+    padding: 5px;
+}
+
+#content {
+    width: 95%;
+    max-width: 700px;
+    height: auto;
+    color: #555555;
+    margin: 80px auto;
+}
+
+#content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#flex-content {
+    background-color: none;
+    margin-top: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#flex-content input {
+    width: 95%;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: solid 1px #cccccc;
+
+}
+
+#flex-content button {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 35px;
+}
+
+#result {
+    background-color: #003366;
+    color: #cccccc;
+    font-size: 24px;
+    width: 350px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: center;
+    display: none;
+    /*faz com que a div comece escondida*/
+}
+
+#footer {
+    width: 95%;
+    height: auto;
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 710px) {
+    #text-header h1 {
+        font-size: 32px;
+    }
+
+    #text-header h2 {
+        font-size: 20px
+    }
+
+    #flex-content {
+        flex-direction: column;
+    }
+
+    #flex-content form{
+        width:100%;
+    }
+
+    #flex-content input, #flex-content button{
+        width:100%
+    }
+
+    #result{
+        width:100%;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:450px) {
+
+    #header {
+        background-image: url(../img/background-mob.jpg);
+    }
+}
